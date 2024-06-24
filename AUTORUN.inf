@@ -1,4 +1,4 @@
 [autorun]
 open=autorun.bat
 action=Run Import Script
-icon=drone.ico
+icon=device.ico
