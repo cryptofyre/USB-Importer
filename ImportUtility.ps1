@@ -58,7 +58,7 @@ function ImportFiles {
 
         foreach ($file in $files) {
             $currentFile++
-            Write-Progress -Activity "Importing files from USB device" -Status "Processing file $currentFile of $totalFiles" -PercentComplete (($currentFile / $totalFiles) * 100)
+            Write-Progress -Activity "Importing files from $deviceModel" -Status "Processing file $currentFile of $totalFiles" -PercentComplete (($currentFile / $totalFiles) * 100)
 
             if (-not (IsFileImported $file.FullName)) {
                 $fileDate = Get-DateFromMetadata $file.FullName
